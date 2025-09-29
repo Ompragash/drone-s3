@@ -246,7 +246,7 @@ steps:
         - release/drone-s3-darwin-amd64.zst
         - release/drone-s3-windows-amd64.zst
       api_key:
-        from_secret: cireporunner_github_token
+        from_secret: op-gitpat
     when:
       event:
       - tag
