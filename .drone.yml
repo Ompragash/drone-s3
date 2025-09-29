@@ -28,11 +28,6 @@ steps:
 volumes:
   - name: gopath
     temp: {}
-trigger:
-  ref:
-    - refs/heads/master
-    - refs/tags/**
-    - refs/pull/**
 
 ---
 kind: pipeline
@@ -72,11 +67,6 @@ steps:
       auto_tag_suffix: linux-amd64
 depends_on:
   - testing
-trigger:
-  ref:
-    - refs/heads/master
-    - refs/tags/**
-    - refs/pull/**
 
 ---
 kind: pipeline
@@ -116,11 +106,6 @@ steps:
       auto_tag_suffix: linux-arm64
 depends_on:
   - testing
-trigger:
-  ref:
-    - refs/heads/master
-    - refs/tags/**
-    - refs/pull/**
 
 ---
 kind: pipeline
@@ -166,11 +151,6 @@ steps:
         - refs/tags/**
 depends_on:
   - testing
-trigger:
-  ref:
-    - refs/heads/master
-    - refs/tags/**
-    - refs/pull/**
 
 ---
 kind: pipeline
@@ -198,10 +178,6 @@ depends_on:
   - linux-arm64
   - windows-1809
   - windows-ltsc2022
-trigger:
-  ref:
-    - refs/heads/master
-    - refs/tags/**
 
 ---
 
