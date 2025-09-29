@@ -63,7 +63,7 @@ steps:
     image: plugins/docker
     settings:
       dockerfile: docker/Dockerfile.linux.amd64
-      repo: plugins/s3
+      repo: harnesscommunitytest/s3
       username:
         from_secret: docker_username
       password:
@@ -107,7 +107,7 @@ steps:
     image: plugins/docker
     settings:
       dockerfile: docker/Dockerfile.linux.arm64
-      repo: plugins/s3
+      repo: harnesscommunitytest/s3
       username:
         from_secret: docker_username
       password:
@@ -151,7 +151,7 @@ steps:
     image: plugins/docker
     settings:
       dockerfile: docker/Dockerfile.windows.1809
-      repo: plugins/s3
+      repo: harnesscommunitytest/s3
       username:
         from_secret: docker_username
       password:
@@ -201,7 +201,7 @@ steps:
     image: plugins/docker
     settings:
       dockerfile: docker/Dockerfile.windows.ltsc2022
-      repo: plugins/s3
+      repo: harnesscommunitytest/s3
       username:
         from_secret: docker_username
       password:
