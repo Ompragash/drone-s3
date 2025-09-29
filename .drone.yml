@@ -207,7 +207,7 @@ trigger:
 
 kind: pipeline
 type: vm
-
+name: release-artifacts
 pool:
   use: ubuntu
 
